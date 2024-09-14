@@ -8,63 +8,122 @@ container {
   margin-right: 100px;
 }
 
-#title {
+ul {
+	list-style-type: none;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto ;
+	gap: 5px;
+	text-align: center;
+	padding: 10px;
+}
+
+.title {
 	width: 45%;
-	float:left;
+	float: left;
+	grid-column: 1 / span 2;
+	grid-row: 1;
 }
 
-#leftdiv1 {
+.about {
+	grid-column: 1;
+	grid-row: 1 / 4;
+}
+
+.profile {
+	grid-column: 2;
+	grid-row: 1 / 3;
+}
+
+.more1 {
+	width: 100%;
+	border-style: solid;
+	border-radius: 15px;
+	border-color: #7A8DE6;
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.more2 {
+	width: 40%;
+	border-style: solid;
+	border-radius: 15px;
+	border-color: #7A8DE6;
+	grid-column: 2 / span 2;
+	grid-row: 1;
+}
+
+
+.leftdiv1 {
   width: 45%;
   float: left;
   border-style: solid;
   border-radius: 15px;
   border-color: #7A8DE6;
   padding: 10px;
+  grid-column: 1;
+  grid-row: 2;
 }
 
-#rightdiv1 {
+.rightdiv1 {
   width: 45%;
   float: right;
   border-style: solid;
   border-radius: 15px;
   border-color: #7A8DE6;
   padding: 10px;
+  grid-column: 2;
+  grid-row: 2;
 }
 
-#leftdiv2 {
+.leftdiv2 {
   width: 45%;
   float: left;
   border-style: solid;
   border-radius: 15px;
   border-color: #7A8DE6;
   padding: 10px;
+  grid-column: 1;
+  grid-row: 3;
 }
 
-#rightdiv2 {
+.rightdiv2 {
   width: 45%;
   float: right;
   border-style: solid;
   border-radius: 15px;
   border-color: #7A8DE6;
   padding: 10px;
+  grid-column: 2;
+  grid-row: 3;
 }
 
-#leftdiv3 {
+.leftdiv3 {
   width: 45%;
   float: left;
   border-style: solid;
   border-radius: 15px;
   border-color: #7A8DE6;
   padding: 10px;
+  grid-column: 1;
+  grid-row: 4;
 }
 
-#rightdiv3 {
+.rightdiv3 {
   width: 45%;
   float: right;
   border-style: solid;
   border-radius: 15px;
   border-color: #7A8DE6;
   padding: 10px;
+  grid-column: 2;
+  grid-row: 4;
 }
 
 h6 {
@@ -130,33 +189,8 @@ p {
   font-weight: 500;
   font-family: Tahoma, Verdana, sans-serif;
   color: #4F3674;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
 }
 
-#profile {
-	float: right;
-}
-
-#more {
-	width: 40%;
-	float: right;
-	border-style: solid;
-	border-radius: 15px;
-	border-color: #7A8DE6;
-}
-
-.grid-container {
-	display: grid;
-	grid-template-columns: auto;
-	row-gap: 50px;
-}
-
-.grid-container > div {
-	text-align: center;
-}
 
 a:link {
   font-family: Tahoma, Verdana, sans-serif;
